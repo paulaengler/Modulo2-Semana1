@@ -1,0 +1,108 @@
+<!-- Módulo 2 - Semana 1 
+
+[M2S01] Ex. 1 - Estrutura básica de HTML 
+Neste exercício, você deve criar a estrutura básica de um documento HTML.
+Siga o checklist abaixo!
+Crie um novo arquivo .html
+Adicione a estrutura básica de um documento, incluindo as tags <html>, <head> e <body>.
+Adicione um título interessante ao seu documento.
+Inclua um texto no corpo do documento. Use a sua criatividade e escreva algo interessante.
+
+[M2S01] Ex. 2 - Adicionando imagens a links
+Neste exercício, você deve inserir no corpo do documento HTML a imagem do logotipo da LAB365 e o link do site.
+A imagem pode ser encontrada neste cartão e para o link, use o seguinte.: Diga oi para o seu futuro! - LAB365
+
+[M2S01] Ex. 3 - Estilizando com CSS
+Nesse exercício, você deve aplicar estilos básicos usando o CSS.
+
+Instruções:
+
+Adicione uma tag <style> dentro da tag <head> do seu documento HTML.
+Estilize o cabeçalho <h1> para ter uma cor de fundo diferente.
+Estilize o parágrafo <p> para ter uma cor de texto diferente e um tamanho de fonte maior.
+Fique à vontade para a decisão de cores!
+
+[M2S01] Ex. 4 - Trabalhando com listas
+Neste exercício, você deve criar duas listas, uma ordenada e outra não ordenada.
+
+A lista não ordenada será a lista de interesses. Para isso, utilize a tag <ul> e <li> para os itens.
+
+A segunda lista, que é ordenada, será o passo a passo para atingir o objetivo dos seus interesses. Para isso, utilize a tag <ol> e <li> para os itens.
+
+Sua estrutura final deve ser assim:
+
+Lista de Interesses
+
+Frontend;
+Design UI;
+...
+Lista de Passo a Passo
+
+Aprender HTML e CSS;
+Aprender sobre responsividade;
+Aprender a usar o Figma;
+...
+
+[M2S01] Ex. 5 - Estrutura Básica com CSS Externo
+Neste exercício, vamos praticar a criação de uma estrutura básica de um documento HTML e a 
+aplicação de estilos usando um arquivo CSS externo.
+
+Primeiramente, crie uma div com dois elementos filhos: o primeiro sendo o título principal e o 
+segundo sendo a descrição. Em seguida, no arquivo CSS externo, estilize essa div, definindo seu background com a cor hexadecimal #cecece.
+
+Sinta-se à vontade para estilizar os outros elementos conforme achar necessário.
+
+Checklist
+Crie a estrutura básica do HTML
+Adicione o link externo do CSS
+-->
+
+<!DOCTYPE html>
+    <head>
+        <title> FMT - Modulo 2 - Semana 1 </title>
+
+        <link rel="stylesheet" href="main.css">
+
+        <style> 
+        p{
+            color: green;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img {
+            border: 5px solid green;
+        }
+        h1 {
+            background-color: blue; 
+            color: pink; /* Cor do texto */
+            padding: 10px; /* Espaçamento interno */
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+        </style>
+    </head>
+    <body>
+        <h1> Realização dos exercícios </h1>
+        <p> Exercícios do Trello </p>
+        <img src="image.png" alt="Logotipo da LAB365" width="250px"/>
+        <p><a href="https://lab365.tech/" target="_blank">Diga oi para o seu futuro! - LAB365 </a></p>
+
+        <h2> Lista de interesses </h2>
+        <ul>
+            <li> Tecnologia </li>
+            <li> Design </li>
+            <li> Programação </li>
+        </ul>
+
+        <h2> Lista de passo a passo </h2>
+        <ol>
+            <li>Desenvolver um plano de estudo e prática contínua</li>
+            <li>Pesquisar e selecionar cursos e recursos relevantes</li>
+            <li>Buscar oportunidades de estágio ou emprego na área</li>
+        </ol>
+
+        <div class="container">
+            <h1>Bem vindo ao LAB365</h1>
+            <p>Curso dedicado ao desenvolvimento de novas tecnologias</p>
+        </div>
+    </body>
+    </html>
